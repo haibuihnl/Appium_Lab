@@ -18,9 +18,8 @@ public class Lab_2_3 {
 
         float BMI = weight/(height*2);
         DecimalFormat decimalFormat = new DecimalFormat("0.0");
-        float BMIdec = Float.parseFloat(decimalFormat.format(BMI));
 
-        float weightExp = Float.parseFloat(decimalFormat.format(20*(height * 2)));
+        float weightExp = 20*(height * 2);
         float numWeight;
 
         if (weight > weightExp){
@@ -29,19 +28,17 @@ public class Lab_2_3 {
             numWeight = weightExp - weight ;
         }
 
-        numWeight = Float.parseFloat(decimalFormat.format(numWeight));
-
-        if (BMIdec <= 18.5) {
+        if (BMI <= 18.5) {
             System.out.printf("Under weight! ");
-            System.out.printf("You should increase %f kg to beauty ",numWeight);
-        }else if (BMIdec > 18.5 && BMIdec <= 24.9) {
+            System.out.printf("You should increase %s kg to beauty ",decimalFormat.format(numWeight));
+        }else if (BMI > 18.5 && BMI <= 24.9) {
             System.out.printf("Nomal weight !");
-        }else if (BMIdec >= 25 && BMIdec <= 29.9) {
+        }else if (BMI >= 25 && BMI <= 29.9) {
             System.out.println("Over weight ! ");
-            System.out.printf("You should decrease %f kg to beauty ",numWeight);
+            System.out.printf("You should decrease %s kg to beauty ",numWeight);
         }else {
             System.out.println("Obesity ! ");
-            System.out.printf("You should decrease %f kg to beauty ",numWeight);
+            System.out.printf("You should decrease %s kg to beauty ",numWeight);
         }
     }
 }

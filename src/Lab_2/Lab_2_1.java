@@ -22,18 +22,15 @@ public class Lab_2_1 {
         float weight = sc.nextFloat();
 
         float BMI = weight/(height*2);
-        DecimalFormat decimalFormat = new DecimalFormat("0.0");
-        float BMIdec = Float.parseFloat(decimalFormat.format(BMI));
-        System.out.println(BMIdec);
 
-        if (BMIdec <= 18.5) {
-            System.out.printf("Under weight!");
-        }else if (BMIdec > 18.5 && BMIdec <= 24.9) {
+        if (BMI <= 18.5) {
+            System.out.printf("Under weight! ");
+        }else if (BMI > 18.5 && BMI <= 24.9) {
             System.out.printf("Nomal weight !");
-        }else if (BMIdec >= 25 && BMIdec <= 29.9) {
-            System.out.println("Over weight !");
+        }else if (BMI >= 25 && BMI <= 29.9) {
+            System.out.println("Over weight ! ");
         }else {
-            System.out.println("Obesity !");
+            System.out.println("Obesity ! ");
         }
     }
 }
