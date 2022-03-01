@@ -58,7 +58,7 @@ public class Lab_4 {
             } else if (userInput == 2) {
                 System.out.println("Print numbers in list: ");
                 for (Integer value : myIntList) {
-                    System.out.println(value + " ");
+                    System.out.println(value);
                 }
 
             } else if (userInput == 3) {
