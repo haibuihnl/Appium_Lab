@@ -50,6 +50,10 @@ public class Lab_4 {
             }
             if (userInput == 0) {
                 isContinuing = false;
+                /*Find index of number */
+                System.out.print("\nInput a number in the list want to find index: ");
+                int numFind = sc.nextInt();
+                System.out.printf("Index of %d in list : %d", numFind, myIntList.indexOf(numFind));
             }
             if (userInput == 1) {
                 System.out.print("Add a number into ArrayList: ");
@@ -69,9 +73,5 @@ public class Lab_4 {
             }
 
         }
-        /*Find index of number */
-        System.out.print("\nInput a number in the list want to find index: ");
-        int numFind = sc.nextInt();
-        System.out.printf("Index of %d in list : %d", numFind, myIntList.indexOf(numFind));
     }
 }
