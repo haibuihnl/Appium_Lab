@@ -1,4 +1,4 @@
-package Lab6;
+package Lab_6;
 
 /*
 *String myStr = "100 minutes";

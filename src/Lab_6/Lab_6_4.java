@@ -1,4 +1,4 @@
-package Lab6;
+package Lab_6;
 
 /*
 *String url = "https://google.com";
