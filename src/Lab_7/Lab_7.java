@@ -24,10 +24,10 @@ public class Lab_7 {
                     "2. Find book by ISBN\n" +
                     "0. Exit !");
 
-            System.out.print("Input selection : ");
-            int inputSelection = sc.nextInt();
+            System.out.print("Enter selection : ");
+            int enterSelect = sc.nextInt();
 
-            switch (inputSelection) {
+            switch (enterSelect) {
                 case 1:
                     System.out.print("Input ISBN: ");
                     String isbn = sc.next();
@@ -37,19 +37,18 @@ public class Lab_7 {
                     String authorName = sc.next();
                     System.out.print("Input year: ");
                     int year = sc.nextInt();
-                    sc.nextLine();
                     Book newBook = new Book(isbn, title, authorName, year);
                     bookList.add(newBook);
                     break;
                 case 2:
                     System.out.print("Input ISBN : ");
                     String isbnToFoFind = sc.next();
-                    List<Book> foundListBook  = findBookByISBN(isbnToFoFind, bookList);
-                    if(foundListBook.size() == 0){
+                    List<Book> ListBook  = findBookByISBN(isbnToFoFind, bookList);
+                    if(ListBook.size() == 0){
                         System.out.printf("Don't have book with %s", isbnToFoFind);
                         break;
                     }
-                    for(Book book: foundListBook){
+                    for(Book book: ListBook){
                         System.out.println(book);
                     }
                     break;
