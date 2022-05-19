@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TestAnimal {
+public class Lab_9 {
     public static void main(String[] args) {
         Animal tiger = new Animal.Builder().withName("Tiger").withSpeed(100).withWings(false).build();
         Animal eagle = new Animal.Builder().withName("Eagle").withSpeed(75).withWings(false).build();
         Animal dog = new Animal.Builder().withName("Dog").withSpeed(60).withWings(false).build();
         Animal horse = new Animal.Builder().withName("Horse").withSpeed(80).withWings(true).build();
 
-        Animal winner = new TestAnimal().getWinner(Arrays.asList(tiger, horse, dog, eagle));
+        Animal winner = new Lab_9().getWinner(Arrays.asList(tiger, horse, dog, eagle));
         System.out.printf("The winner is %s, with speed %d ", winner.getName(), winner.getSpeed());
     }
 
